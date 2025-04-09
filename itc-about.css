@@ -1,0 +1,139 @@
+body {
+  background-color: rgb(22, 22, 22);
+}
+
+.classic-navbar {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 1rem 2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 0;
+  z-index: 1000;
+  /*background: linear-gradient(to bottom right, rgb(38, 38, 38), #090808);*/
+  background-color: none;
+}
+
+.header-itc-logo {
+  flex: 3;
+  cursor: pointer;
+}
+
+.navbar-itc-logo {
+  width: 3.8vw;
+}
+
+.nav-links {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  justify-content: flex-end;
+  gap: 1.3rem;
+  align-items: center;
+}
+
+.classic-sub-nav {
+  font-family: Quicksand;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: none;
+  color: white;
+  height: 1.5vw;
+  width: 5.8vw;
+  border-radius: 0.7vw;
+  align-items: center;
+  transition: transform 0.25s ease-in-out;
+}
+
+.classic-sub-nav:hover {
+  color: grey;
+  transition-duration: 0.25s;
+  transform: scale(1.05);
+}
+
+.header {
+  color: white;
+  font-family: Outfit;
+  font-weight: 700;
+  font-size: 3.2vw;
+  margin-top: 6vw;
+}
+
+.sub-header {
+  color: white;
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 1.6vw;
+}
+
+.about {
+  color: white;
+  font-family: Montserrat;
+  font-size: 1.2vw;
+  text-align: center;
+}
+
+.club-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 6vw;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12vw;
+}
+
+.club-title {
+  font-family: Outfit;
+  font-weight: 700;
+  font-size: 2em;
+  color: rgb(214, 208, 208);
+  text-align: center;
+  padding-top: 8vw;
+  cursor: pointer;
+}
+
+.column-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 6vw;
+}
+
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 6vw;
+}
+
+.club-preview {
+  display: flex;
+  width: 22vw;
+  height: 25vw;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2vw;
+  transition: transform 0.5s ease-out;
+}
+
+.club-preview:hover {
+  border-radius: 2vw;
+  transition-duration: 0.5s;
+  transform: scale(1.05);
+}
+
+.club-logo {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  background-color: white;
+}

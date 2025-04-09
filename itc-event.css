@@ -1,0 +1,77 @@
+body {
+  background-color: rgb(22, 22, 22);
+}
+
+.classic-navbar {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 1rem 2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 0;
+  z-index: 1000;
+  /*background: linear-gradient(to bottom right, rgb(38, 38, 38), #090808);*/
+  background-color: none;
+}
+
+.header-itc-logo {
+  flex: 3;
+  cursor: pointer;
+}
+
+.navbar-itc-logo {
+  width: 3.8vw;
+}
+
+.nav-links {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  justify-content: flex-end;
+  gap: 1.3rem;
+  align-items: center;
+}
+
+.classic-sub-nav {
+  font-family: Quicksand;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: none;
+  color: white;
+  height: 1.5vw;
+  width: 5.8vw;
+  border-radius: 0.7vw;
+  align-items: center;
+  transition: transform 0.25s ease-in-out;
+}
+
+.classic-sub-nav:hover {
+  color: grey;
+  transition-duration: 0.25s;
+  transform: scale(1.05);
+}
+
+.header {
+  font-family: Outfit;
+  font-weight: 700;
+  font-size: 3.2vw;
+  color: white;
+  padding-top: 4vw;
+}
+
+.body {
+  font-family: Montserrat;
+  font-size: 1.2vw;
+  color: white;
+}

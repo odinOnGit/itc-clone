@@ -1,0 +1,209 @@
+body {
+  background-color: rgb(22, 22, 22);
+  margin: 0;
+}
+
+.welcome-text {
+  font-family: Outfit;
+  font-weight: 700;
+  font-size: 3vw;
+  color: white;
+  text-align: center;
+  padding-top: 18rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.itc-img-div {
+  display: flex;
+  justify-content: center;
+}
+
+.itc-img {
+  width: 9vw;
+  transition: transform 0.5s ease-out;
+  cursor: pointer;
+}
+
+.itc-img:hover {
+  transform: scale(1.10);
+  transition-duration: 0.75s;
+}
+
+.arrow-img-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vw;
+
+}
+
+.arrow-img {
+  width: 4%;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  animation: bounce 1.5s infinite ease-in-out;
+
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 15vw;
+  background-color: none;
+}
+
+.sub-nav {
+  position: relative;
+  width: 22vw; /* Or a fixed width like 300px */
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  height: 30vw;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2vw;
+  box-shadow: 0 0 2vw rgb(0, 0, 0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease;
+}
+
+.sub-nav:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 2.2vw rgb(0, 0, 0);
+  transition-duration: 0.5s;
+}
+
+.preview-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.note {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.4); /* Optional dark overlay */
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.preview-title {
+  font-family: Orbitron;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 0.2vw;
+  margin-left: 0.2vw;
+}
+
+.preview-body {
+  font-size: 0.9rem;
+  font-family: Montserrat;
+}
+
+.classic-navbar {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 1rem 2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 0;
+  z-index: 1000;
+  /*background: linear-gradient(to bottom right, rgb(38, 38, 38), #090808);*/
+  background-color: none;
+}
+
+.header-itc-logo {
+  flex: 3;
+  cursor: pointer;
+}
+
+.navbar-itc-logo {
+  width: 3.8vw;
+}
+
+.nav-links {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  justify-content: flex-end;
+  gap: 1.3rem;
+  align-items: center;
+}
+
+.classic-sub-nav {
+  font-family: Quicksand;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: none;
+  color: white;
+  height: 1.5vw;
+  width: 5.8vw;
+  border-radius: 0.7vw;
+  align-items: center;
+  transition: transform 0.25s ease-in-out;
+}
+
+.classic-sub-nav:hover {
+  color: grey;
+  transition-duration: 0.25s;
+  transform: scale(1.05);
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.video-fade-effect {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 15%;
+  background: linear-gradient(to bottom, transparent ,rgb(22, 22, 22));
+  pointer-events: none;
+}

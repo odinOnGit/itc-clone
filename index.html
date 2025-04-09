@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      ITC Home
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="itc-home.css">
+  </head>
+  <body>
+    <div class="video-background">
+      <video autoplay muted loop class="bg-video">
+        <source src="3130182-uhd_3840_2160_30fps.mp4" type="video/mp4" />
+      </video>
+      <div class="video-fade-effect"></div>
+    </div>    
+    <div class="classic-navbar">
+      <div class="header-itc-logo">
+        <img class="navbar-itc-logo" src="ITClogoWhite.png" onclick="location.href='index.html'">
+      </div>
+      <div>
+        <div class="nav-links">
+          <div class="classic-sub-nav" onclick="location.href='index.html'">Home</div>
+          <div class="classic-sub-nav" onclick="location.href='itc-about.html'">About Us</div>
+          <div class="classic-sub-nav" onclick="location.href='itc-event.html'">Events</div>
+          <div class="classic-sub-nav" onclick="location.href='itc-contact.html'">Contact Us</div>
+        </div>
+      </div>
+    </div>
+    <p class="welcome-text">Welcome to</p>
+    <div class="itc-img-div">
+      <img class="itc-img" src="ITClogoWhite.png">
+    </div>
+    <div class="arrow-img-div">
+      <img class="arrow-img" src="be9664bf9adf8887f8b58e9a4514ffec-removebg-preview.png" onclick="scrollBySection()">
+    </div>
+    <div class="navbar">
+      <div class="sub-nav" onclick="location.href='itc-about.html'">
+        <div class="note"> 
+          <p class="preview-title">ABOUT US</p>
+          <p class="preview-body">ITC aims to cultivate a culture of innovation by organizing workshops, competitions, and projects across diverse technical fields, enhancing collaboration and creativity among students.</p>
+        </div> 
+        <img class="preview-thumbnail" src="about-card.jpg">
+      </div>
+      <div class="sub-nav" onclick="location.href='index.html'">
+        <div class="note">
+          <p class="preview-title">HOME</p>
+          <p class="preview-body">The Institute Technical Council (ITC) at IIT Bombay fosters student innovation and technical skills, providing resources and guidance to bring ideas to life through various technical clubs, teams, and events.</p>
+        </div>
+        <img src="q7dbip9p.png" class="preview-thumbnail">
+      </div>
+      <div class="sub-nav" onclick="location.href='itc-event.html'">
+        <div class="note">
+          <p class="preview-title">EVENTS</p>
+          <p class="preview-body">ITC hosts numerous events, including the RC Plane Competition by the Aeromodelling Club, which engages over 400 students in designing and flying remote-controlled planes.</p>
+        </div>
+        <img class="preview-thumbnail" src="374be8d321af2a06af4a870878097722.jpg">
+      </div>
+    </div>
+
+    <script src="itc-home.js"></script>
+  </body>
+</html>
